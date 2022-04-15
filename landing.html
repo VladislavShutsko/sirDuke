@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <script src="https://kit.fontawesome.com/b50b0cdf80.js" crossorigin="anonymous"></script>
+    <title>Configurator</title>
+</head>
+
+<body class="page">
+
+    <header class="header">
+
+        <div class="header__title">Configurator</div>
+
+    </header>
+    <main class="content">
+        <section class="navigation">
+            <a class="nav" href="#"><i class="fa-solid fa-gear"></i>Настройки</a>
+            <a class="nav" href="#"><i class="fa-solid fa-eye"></i>Предпросмотр</a>
+            <a class="nav" href="#"><i class="fa-solid fa-at"></i>Отправить Email</a>
+        </section>
+        <section class="forms">
+            <div class="headerOrder">
+                <div class="title">Порядок Header'ов</div>
+                <ul class="headerList">
+                    <li class="headerList__item"><i class="fa-solid fa-list"></i>From</li>
+                    <li class="headerList__item"><i class="fa-solid fa-list"></i>To</li>
+                    <li class="headerList__item"><i class="fa-solid fa-list"></i>Date</li>
+                    <li class="headerList__item"><i class="fa-solid fa-list"></i>List-Unsubscribe</li>
+                    <li class="headerList__item"><i class="fa-solid fa-list"></i>X-Test</li>
+                </ul>
+            </div>
+            <div class="functions">
+                <div class="title">Доступные функции</div>
+                <ul class="functions__list">
+                    <li class="functions__item">{f_domain}</li>
+                    <li class="functions__item">{f_messageid}</li>
+                    <li class="functions__item">{f_rand}</li>
+                    <li class="functions__item">{f_rand_ip}</li>
+                    <li class="functions__item">{f_rand_str}</li>
+                </ul>
+            </div>
+            <div class="customHeaders">
+                <div class="title">Кастомные Header'ы</div>
+                <form class="customHeaders">
+                    <div class="customHeaders__inputs">
+                        <input class="customHeaders__inputs_name" placeholder="Название Header'a">
+                        <input class="customHeaders__inputs_value" placeholder="Значение">
+                        <button class="customHeaders__delete"><i class="fa-regular fa-trash-can"></i></button>
+                    </div>
+                    <button type="submit" class="customHeaders__submit">Добавить1</button>
+                </form>
+            </div>
+            <div class="replaceHeader">
+                <div class="title">Замена Header'ов</div>
+                <form class="replaceHeader__form">
+                    <div class="replaceHeader__inputs">
+                        <input class="replaceHeader__inputs_name" placeholder="recieved">
+                        <input class="replaceHeader__inputs_value" placeholder="from">
+                        <input class="replaceHeader__inputs_value" placeholder="#####">
+                        <button class="replaceHeader__delete"><i class="fa-regular fa-trash-can"></i></button>
+                    </div>
+                    <button type="submit" class="customHeaders__submit">Добавить</button>
+                </form>
+            </div>
+            <div class="controls">
+                <button class="controls__save save" type="submit">Сохранить</button>
+                <button class="controls__reset reset" type="reset">Сбросить настройки</button>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
